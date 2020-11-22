@@ -189,7 +189,7 @@ ui <- fluidPage(
                                tags$li(tags$p(style="font-family:Avenir", tags$strong("COLUMN 6"),": ", tags$em("rnkUp")," — upper 95% confidence bound of bootstrapped rank")),
                                tags$li(tags$p(style="font-family:Avenir", tags$strong("COLUMN 7"),": ", tags$em("rnkKaplo")," —", tags$em("κ"), "-clipped lower 95% confidence bound of bootstrapped rank")),
                                tags$li(tags$p(style="font-family:Avenir", tags$strong("COLUMN 8"),": ", tags$em("rnkKapmed")," —", tags$em("κ"), "-clipped median bootstrapped rank")),
-                               tags$a(href="https://github.com/cjabradshaw/EpsilonIndexShiny/blob/main/LICENSE", tags$img(height = 50, src = "GNU GPL3.png", style="float:right", title="GNU General Public Licence v3.0")),
+                               tags$a(href="https://github.com/cjabradshaw/JournalRankShiny/blob/main/LICENSE", tags$img(height = 50, src = "GNU GPL3.png", style="float:right", title="GNU General Public Licence v3.0")),
                                tags$li(tags$p(style="font-family:Avenir", tags$strong("COLUMN 9"),": ", tags$em("rnkKapup")," —", tags$em("κ"), "-clipped upper 95% confidence bound of bootstrapped rank"))),
                                tags$br()
               ) # end tab4
