@@ -14,6 +14,7 @@ library(ggplot2)
 library(ggpubr)
 library(ggrepel)
 library(forcats)
+library(dplyr)
 
 ## call functions
 source(file.path("./functions/", "setBackgroundColor.R"), local=T)
@@ -53,7 +54,7 @@ ui <- fluidPage(
                                         "blog post", tags$i(class="fas fa-blog"), ".")),
     tags$h4(style="font-family:Avenir", "Instructions"),
     tags$ol(tags$li(tags$p(style="font-family:Avenir", "Create a delimited text file of", tags$strong("exactly the same format"), "as the example file in this",
-           tags$a(href="https://github.com/cjabradshaw/EpsilonIndex/blob/main/datasample.csv","repository", tags$i(class="far fa-file")), ",
+           tags$a(href="https://github.com/cjabradshaw/JournalRankShiny/blob/main/Jsamp2019.csv","repository", tags$i(class="far fa-file")), ",
            although you can specify the delimit character (", tags$em("comma"),", ", tags$em("space"),", ", tags$em("tab"),").")),
            tags$li(tags$p(style="font-family:Avenir", "Load your delimited text file in the app by clicking the",tags$i(class="fas fa-file-import"),
            tags$strong("choose file"), "button.")),
@@ -260,9 +261,9 @@ server <- function(input, output, session) {
           input$rankPlots
           
           Ctheme1 = theme(
-            axis.text.x = element_text(size = 12, family="Avenir"),
+            axis.text.x = element_text(size = 12),
             axis.title.x = element_text(size = 16),
-            axis.text.y = element_text(size = 8, face="italic", family="Avenir")
+            axis.text.y = element_text(size = 8, face="italic")
             )
 
           kappaRnk <- results %>%
