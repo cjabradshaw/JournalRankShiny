@@ -44,9 +44,8 @@ ui <- fluidPage(
            tags$a(href="https://service.elsevier.com/app/answers/detail/a_id/30562/supporthub/scopus/", "CiteScore"), "(CS),",
            tags$a(href="https://blog.scopus.com/posts/journal-metrics-in-scopus-source-normalized-impact-per-paper-snip", "Source-Normalized Impact Per Paper"),
            "(SNIP), and", tags$a(href="https://www.scopusjournals.com/2019/02/scimago-journal-rank.html", "SCImago Journal Rank"), "(SJR).
-           The output gives an index of relative rank uncertainty for all sample journals provided by the user. This", tags$i(class="fab fa-r-project"), "Shiny App estimates the ε-index and its variants 
-           using user-provided data files. This", tags$i(class="fab fa-github"), "Github ",
-           tags$a(href = "https://github.com/cjabradshaw/JournalRankShiny", "repository"),
+           The output gives an index of relative rank uncertainty for all sample journals provided by the user. This", tags$i(class="fab fa-github"),
+           "Github ", tags$a(href = "https://github.com/cjabradshaw/JournalRankShiny", "repository"),
            "provides all the 'under-the-bonnet'",tags$i(class="fab fa-r-project"),"code for the app. Read the related",
            tags$a(href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0149852", "paper", tags$i(class="far fa-file")),
            " and/or", tags$a(href="https://conservationbytes.com/2016/02/18/how-to-rank-journals/",
