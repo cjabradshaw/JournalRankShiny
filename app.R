@@ -85,7 +85,7 @@ ui <- fluidPage(
                                           choiceNames = list("1000", "10000", "100000"), choiceValues = list(1000,10000,100000)),
                              tags$hr(),
                              radioButtons("kappa", label=tags$p(tags$i(class='fas fa-cut'), "choose clipping value", tags$em("κ")), inline=T,
-                                         c("2"="2","3"="3","4"="4")),
+                                         c("1.5"="1.5","2"="2","3"="3","4"="4"), selected="2"),
                              tags$hr(),
                              radioButtons("nK", label=tags$p(tags$i(class='fas fa-redo'), "choose number of clipping repeats", tags$em("n")), inline=T,
                                           c("2"="2","5"="5","10"="10"), selected="5"),
