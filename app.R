@@ -7,6 +7,7 @@ rm(list = ls())
 
 # load libraries
 library(shiny)
+library(shinybusy)
 library(Hmisc)
 library(cluster)
 library(bootstrap)
@@ -104,10 +105,12 @@ ui <- fluidPage(
                            fluidRow(
                              tags$div(id = "firstOutput", 
                                       h3("input data"),
+                                      add_busy_spinner(spin="fading-circle", color="blue", timeout=500, position="bottom-right", height = 250, width = 250),
                                       dataTableOutput("table1")) 
                            ),
                            
                            fluidRow(
+                             add_busy_spinner(spin="fading-circle", color="blue", timeout=500, position="bottom-right", height = 250, width = 250),
                              tags$div(id = "placeholder") # the dynamic UI will be inserted relative to this placeholder
                            ),
                            
@@ -116,6 +119,7 @@ ui <- fluidPage(
                        ) # sidebarLayout
               ), # end tab1
               
+  
               tabPanel(value="tab2", title=tags$strong("rank plots"), style = "background: MintCream",
                        
                        tags$br(),
@@ -127,6 +131,7 @@ ui <- fluidPage(
                        
                        mainPanel(
                          tags$br(),
+                         add_busy_spinner(spin="fading-circle", color="blue", timeout=500, position="bottom-right", height = 250, width = 250),
                          plotOutput(height="1200px", width="150%","rankPlots")
                        ) # end mainPanel
                        
@@ -142,6 +147,7 @@ ui <- fluidPage(
                          tags$br(),
                          tags$p(style="font-family:Avenir","The loess trend is indicated by the blue line."),
                          tags$br(),
+                         add_busy_spinner(spin="fading-circle", color="blue", timeout=500, position="bottom-right", height = 250, width = 250),
                          plotOutput(height="800px", width="150%", "cMYPlots")
                        ) # end mainPanel
                        
@@ -202,7 +208,7 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   
-  observeEvent(input$tabs, {
+  observeEvent(input$file1, {
     
     if(input$tabs == "tab1"){
       
@@ -254,6 +260,10 @@ server <- function(input, output, session) {
         }
       )
     } # end if for tab1
+    
+  }) # end Events
+
+  observeEvent(input$tabs, {
     
     if(input$tabs == "tab2"){
       
