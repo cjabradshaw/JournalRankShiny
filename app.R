@@ -31,7 +31,7 @@ ui <- fluidPage(
   titlePanel("JournalRankShiny: a multi-index bootstrap function to rank a sample of peer-reviewed journals"),
   
   wellPanel(style = "background: azure",
-    tags$a(href="https://github.com/cjabradshaw/JournalRankShiny", tags$img(height = 150, src = "rank.png", style="float:right")),
+    tags$a(href="https://github.com/cjabradshaw/JournalRankShiny", tags$img(height = 150, src = "race.png", style="float:right")),
     tags$p(style="font-family:Avenir", tags$i(class="fab fa-r-project", title="R Project"),"Shiny App by", tags$a(href="https://globalecologyflinders.com/people/#CJAB", "Corey Bradshaw "),
            tags$a(href = "mailto:corey.bradshaw@flinders.edu.au","(",tags$i(class="far fa-envelope"),"e-mail"),";",
            tags$a(href = "https://github.com/cjabradshaw", tags$i(class="fab fa-github",title="Github"),"Github)")),
