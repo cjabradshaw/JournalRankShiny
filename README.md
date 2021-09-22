@@ -1,4 +1,5 @@
 # JournalRankShiny
+<img align="right" src="rank.png" alt="rank" width="200" style="margin-top: 20px">
 
 This R Shiny <a href="https://cjabradshaw.shinyapps.io/JournalRankShiny">app</a> provides a <em>κ</em>-resampled composite journal rank incorporating six user-supplied citation indices
 
