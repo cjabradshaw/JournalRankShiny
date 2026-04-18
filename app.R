@@ -155,7 +155,7 @@ ui <- fluidPage(
               
               tabPanel(value="tab4", title=tags$strong("input/output column descriptors"), style = "background: MintCream",
                        tags$h2(style="font-family:Avenir", "Column descriptors"),
-                       tags$a(href="https://flinders.edu.au/", tags$img(height = 100, src = "flinders_university_logo_stacked_rgb_master.png", style="float:right",title="Flinders University")),
+                       tags$a(href="https://flinders.edu.au/", tags$img(height = 140, src = "flinders_university_logo_stacked_rgb_master.png", style="float:right",title="Flinders University")),
                        tags$h3(style="font-family:Avenir", "Input data file requirements"),
                        tags$ol(tags$li(tags$p(style="font-family:Avenir", tags$strong("COLUMN 1"),": ", tags$em("Journal")," — abbreviated journal name (see abbreviations
                                               list", tags$a(href="https://www.library.caltech.edu/journal-title-abbreviations", "here"),")")),

@@ -5,6 +5,6 @@ account: cjabradshaw
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3281778
-bundleId: 11870031
+bundleId: 11870037
 url: https://cjabradshaw.shinyapps.io/JournalRankShiny/
 version: 1
