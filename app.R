@@ -61,7 +61,7 @@ ui <- fluidPage(
            tags$strong("choose file"), "button.")),
            tags$li(tags$p(style="font-family:Avenir", "Select the number of bootstrap iterations", tags$i(class="fas fa-sort-amount-down-alt"), 
            "you desire (1000, 10000, or 100000) — more iterations will provide better estimates of the uncertainty bounds, but will take longer to calculate.")),
-           tags$a(href="https://globalecologyflinders.com/", tags$img(height = 100, src = "GEL Logo Kaurna transparent.png", style="float:right",
+           tags$a(href="https://globalecologyflinders.com/", tags$img(height = 100, src = "gel-logo-kaurna-new-transp.png", style="float:right",
                                                                title="Global Ecology @ Flinders University")),
            tags$li(tags$p(style="font-family:Avenir", "Set the", tags$em("κ"), "'clipping'",tags$i(class="fas fa-cut"), "limitation and number of repeats",
                           tags$em("n"), tags$i(class="fas fa-redo"), "to reduce the influence of outliers on the  uncertainty bounds.")),
@@ -155,7 +155,7 @@ ui <- fluidPage(
               
               tabPanel(value="tab4", title=tags$strong("input/output column descriptors"), style = "background: MintCream",
                        tags$h2(style="font-family:Avenir", "Column descriptors"),
-                       tags$a(href="https://flinders.edu.au/", tags$img(height = 100, src = "F_V_CMYK.png", style="float:right",title="Flinders University")),
+                       tags$a(href="https://flinders.edu.au/", tags$img(height = 100, src = "flinders_university_logo_stacked_rgb_master.png", style="float:right",title="Flinders University")),
                        tags$h3(style="font-family:Avenir", "Input data file requirements"),
                        tags$ol(tags$li(tags$p(style="font-family:Avenir", tags$strong("COLUMN 1"),": ", tags$em("Journal")," — abbreviated journal name (see abbreviations
                                               list", tags$a(href="https://www.library.caltech.edu/journal-title-abbreviations", "here"),")")),
